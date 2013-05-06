@@ -7,7 +7,7 @@ flat-file markdown wiki software written in Python.  Inspired heavily by gollum.
 
 ## Introduction
 
-Just put .md files in the `notes/` directory and view a beautiful rendered wiki version in your browser
+Just put .md files in the `notes/` directory and view a beautiful rendered wiki version in your browser.
 The file `notes/foo-file.md` corresponds to `http://localhost:8080/notes/foo-file`.
 
 Hypenated titles get treated as a space character (` `).
