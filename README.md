@@ -39,9 +39,3 @@ $ python app/
 ```
 
 go to [http://localhost:8080](http://localhost:8080).  You should see a wiki!
-
-
-## Screenshot
-
-
-[Example screenshot of my personal wiki](http://dl.dropbox.com/u/17210216/Screenshots/4r.png)
