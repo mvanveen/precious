@@ -3,7 +3,7 @@ precious
 
 ![](http://1.bp.blogspot.com/_g9aAldovQlE/TQbubvFcMtI/AAAAAAAAABA/dISjf3vbveI/s1600/6_gandalf_smokingpipe.jpg)
 
-flat-file wiki software written in Python.  Inspired heavily by golum
+flat-file wiki software written in Python.  Inspired heavily by gollum
 
 **Warning**: Early beta software!
 
