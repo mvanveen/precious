@@ -5,6 +5,12 @@ precious
 
 flat-file wiki software written in Python.  Inspired heavily by golum.
 
+## Installation
+
+**Note**: The below instructions assume `pip`, `virtualenv`, and `virtualenvwrapper` are installed.
+
+Instructions on how to install the above 3 packages are forth-coming.
+
 ```bash
 $ git clone git@github.com:mvanveen/precious.git
 $ mkvirtualenv wiki
