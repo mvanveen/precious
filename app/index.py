@@ -5,7 +5,7 @@ import re
 import bottle
 import bottle as app
 from bottle import static_file
-import markdown
+import misaka as m
 import pystache
 
 STATIC_PATH = os.path.abspath(
@@ -52,7 +52,7 @@ def render(filename, template, edit=False):
    note = re.sub(
       r'\[\[([A-Z \.a-z0-9]+)\]\]',
       replacement,
-      markdown.markdown(note)
+      m.html(note)
     )
 
   return pystache.render(loader.load_name(template), {
