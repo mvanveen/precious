@@ -1,0 +1,53 @@
+<html>
+<head>
+<link rel='stylesheet'  href="/assets/css/github.css" type='text/css' media='all' />
+<script src="/assets/js/codemirror.js"></script>
+<script src="/assets/js/jquery-1.6.2.min.js"></script>
+<link rel="stylesheet" href="/assets/css/codemirror.css">
+<script src="/assets/js/mode/markdown/markdown.js"></script>
+<style>
+#save-btn:hover {
+  background-color: #54697E;
+}
+#save-btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #34495E;
+  transition: 0.25s;
+  color: white;
+}
+
+</style>
+
+</head>
+<body>
+<div style='width:90%;border: 1px solid black;'>
+<textarea id='source'>{{^content}}# {{title}}{{/content}}{{{content}}}</textarea>
+</div>
+<br />
+<div>
+<a id='save-btn' data-redirect='{{filename}}'>Save</a>
+</div>
+<script>
+
+var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('source'));
+
+$('#save-btn').click( function( ) {
+$.ajax({
+  url: window.location,
+  dataType: 'json',
+  data: {
+    string: myCodeMirror.getValue()
+  },
+  type: 'POST',
+  success: function(data) {
+    console.log(data)
+    window.location = '/notes/' + $('#save-btn').data('redirect');
+  }});
+})
+
+
+</script>
+
+</body>
+</html>
